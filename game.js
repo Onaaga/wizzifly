@@ -83,6 +83,8 @@ function repintar()
     	},false);
 	document.addEventListener('keydown',function(evt){ lastPress=evt.keyCode;  presiona[evt.keyCode]=true; },false);
 	document.addEventListener('keyup',function(evt){  presiona[evt.keyCode]=false; },false);
+  document.addEventListener('mousedown',function(evt){ lastPress=32;  presiona[32]=true; },false);
+  document.addEventListener('mouseup',function(evt){  presiona[32]=false; },false);
 
 <!-- /iniciar control -->
 

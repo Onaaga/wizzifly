@@ -1,11 +1,11 @@
-var inicio = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); inicio.dibujo=3; inicio.velocidad=80; inicio.vida=20; inicio.poder=10; inicio.h=40; inicio.w=70; inicio.x=0; inicio.y=0; inicio.fotograma=1; inicio.volumen=800; inicio.resolucion=800; 
-var fondo = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); fondo.dibujo=2; fondo.velocidad=80; fondo.vida=20; fondo.poder=10; fondo.h=40; fondo.w=70; fondo.x=0; fondo.y=0; fondo.fotograma=1; fondo.volumen=800;  fondo.resolucion=800; 
-var fondo2 = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); fondo2.dibujo=2; fondo2.velocidad=80; fondo2.vida=20; fondo2.poder=10; fondo2.h=40; fondo2.w=70; fondo2.x=800; fondo2.y=0; fondo2.fotograma=1; fondo2.volumen=800; fondo2.resolucion=800; 
-var perdiste = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); perdiste.dibujo=4; perdiste.velocidad=80; perdiste.vida=20; perdiste.poder=10; perdiste.h=40; perdiste.w=70; perdiste.x=0; perdiste.y=0; perdiste.fotograma=1; perdiste.volumen=800; perdiste.resolucion=800; 
-var guerrero = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); guerrero.dibujo=1; guerrero.velocidadmax=30; guerrero.vida=20; guerrero.poder=10; guerrero.h=40; guerrero.w=70; guerrero.fotograma=1; guerrero.volumen=150; guerrero.estado=0; guerrero.resolucion=100;  
+var inicio = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); inicio.dibujo=3; inicio.velocidad=80; inicio.vida=20; inicio.poder=10; inicio.h=40; inicio.w=70; inicio.x=0; inicio.y=0; inicio.fotograma=1; inicio.volumen=800; inicio.resolucion=800;
+var fondo = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); fondo.dibujo=2; fondo.velocidad=80; fondo.vida=20; fondo.poder=10; fondo.h=40; fondo.w=70; fondo.x=0; fondo.y=0; fondo.fotograma=1; fondo.volumen=800;  fondo.resolucion=800;
+var fondo2 = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); fondo2.dibujo=2; fondo2.velocidad=80; fondo2.vida=20; fondo2.poder=10; fondo2.h=40; fondo2.w=70; fondo2.x=800; fondo2.y=0; fondo2.fotograma=1; fondo2.volumen=800; fondo2.resolucion=800;
+var perdiste = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); perdiste.dibujo=4; perdiste.velocidad=80; perdiste.vida=20; perdiste.poder=10; perdiste.h=40; perdiste.w=70; perdiste.x=0; perdiste.y=0; perdiste.fotograma=1; perdiste.volumen=800; perdiste.resolucion=800;
+var guerrero = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); guerrero.dibujo=1; guerrero.velocidadmax=30; guerrero.vida=20; guerrero.poder=10; guerrero.h=40; guerrero.w=70; guerrero.fotograma=1; guerrero.volumen=150; guerrero.estado=0; guerrero.resolucion=100;
 
 
-var tubo1 = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); tubo1.dibujo=5; tubo1.velocidad=80; tubo1.vida=20; tubo1.poder=10; tubo1.h=570; tubo1.w=50; tubo1.x=-100; tubo1.y=0; tubo1.fotograma=1; tubo1.volumen=800; tubo1.resolucion=800; 
+var tubo1 = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); tubo1.dibujo=5; tubo1.velocidad=80; tubo1.vida=20; tubo1.poder=10; tubo1.h=570; tubo1.w=50; tubo1.x=-100; tubo1.y=0; tubo1.fotograma=1; tubo1.volumen=800; tubo1.resolucion=800;
 var tubo2 = new ente(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0); tubo2.dibujo=6; tubo2.velocidad=80; tubo2.vida=20; tubo2.poder=10; tubo2.h=570; tubo2.w=50; tubo2.x=1300; tubo2.y=-500; tubo2.fotograma=1; tubo2.volumen=800; tubo2.resolucion=800;
 
 
@@ -81,8 +81,8 @@ var tecla_control = 17;
 
 
 
-var tocar1; 
-var sonido_musica1 = "sonidos/musica1.wav"; 
+var tocar1;
+var sonido_musica1 = "sonidos/musica1.wav";
 
 
 <!-- Imagenes -->
