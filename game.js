@@ -5,6 +5,7 @@ var juego=null;
 var ctx=null;
 var presiona=[];
 var lastPress = null;
+var el = document.getElementsByTagName("canvas")[0];
 
 <!-- /Inicio -->
 
@@ -22,7 +23,7 @@ function init()
 
 tocar1 = document.getElementById("tocadisco1");
     juego=document.getElementById('iijuego');
-    ctx=juego.getContext('2d');   
+    ctx=juego.getContext('2d');
 
         juego.width=800;
         juego.height=600;
@@ -31,7 +32,7 @@ tocar1 = document.getElementById("tocadisco1");
         juego.style.left='0';
         juego.style.width='100%';
         juego.style.height='100%';
-    
+
     enableInputs();
     bucle();
     repintar();
@@ -83,12 +84,19 @@ function repintar()
     	},false);
 	document.addEventListener('keydown',function(evt){ lastPress=evt.keyCode;  presiona[evt.keyCode]=true; },false);
 	document.addEventListener('keyup',function(evt){  presiona[evt.keyCode]=false; },false);
-
-
+  document.addEventListener("touchstart", touchHandler);
+  document.addEventListener("touchmove", touchHandler);
 
 <!-- /iniciar control -->
 
-
+function touchHandler(e) {
+    if(e.touches) {
+        playerX = e.touches[0].pageX - canvas.offsetLeft - playerWidth / 2;
+        playerY = e.touches[0].pageY - canvas.offsetTop - playerHeight / 2;
+        output.innerHTML = "Touch: "+ " x: " + playerX + ", y: " + playerY;
+        e.preventDefault();
+    }
+}
 
 
 
