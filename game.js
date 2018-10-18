@@ -5,6 +5,7 @@ var juego=null;
 var ctx=null;
 var presiona=[];
 var lastPress = null;
+var el = document.getElementsByTagName("canvas")[0];
 
 <!-- /Inicio -->
 
@@ -85,8 +86,8 @@ function repintar()
 	document.addEventListener('keyup',function(evt){  presiona[evt.keyCode]=false; },false);
   document.addEventListener('mousedown',function(evt){ lastPress=32;  presiona[32]=true; },false);
   document.addEventListener('mouseup',function(evt){  presiona[32]=false; },false);
-  document.addEventListener('touchstart',function(evt){ lastPress=32;  presiona[32]=true; },false);
-  document.addEventListener('touchend',function(evt){  presiona[32]=false; },false);
+  el.addEventListener('touchstart',function(evt){ lastPress=32;  presiona[32]=true; },false);
+  el.addEventListener('touchend',function(evt){  presiona[32]=false; },false);
 
 <!-- /iniciar control -->
 
